@@ -1,3 +1,3 @@
-import {parse as bibtexParser} from './bibtex';
+import {parse as bibTexParser} from './bibtex';
 
-export { bibtexParser };
+export { bibTexParser };

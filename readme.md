@@ -43,9 +43,9 @@ bibtex-bibjson is licensed as either **MIT** or **Apache-2.0**, whichever you wo
 [license-url]: https://opensource.org/licenses/MIT
 [travis-img]: https://img.shields.io/travis/alaingalvan/bibtex-bibjson.svg?style=flat-square&logo=travis
 [travis-url]: https://travis-ci.org/alaingalvan/bibtex-bibjson
-[npm-img]: https://img.shields.io/npm/v/cross-shader.svg?style=flat-square
-[npm-url]: http://npm.im/cross-shader
-[npm-download-img]: https://img.shields.io/npm/dm/cross-shader.svg?style=flat-square
+[npm-img]: https://img.shields.io/npm/v/bibtex-bibjson.svg?style=flat-square
+[npm-url]: http://npm.im/bibtex-bibjson
+[npm-download-img]: https://img.shields.io/npm/dm/bibtex-bibjson.svg?style=flat-square
 [david-url]: https://david-dm.org/alaingalvan/bibtex-bibjson
 [david-img]: https://david-dm.org/alaingalvan/bibtex-bibjson.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/alaingalvan/bibtex-bibjson#info=devDependencies

@@ -1,1 +1,1 @@
-declare module 'bibtex2bibjson';
+export function bibTexParser(bibTex:string): Object;

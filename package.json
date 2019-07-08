@@ -1,0 +1,45 @@
+{
+  "name": "bibtex-bibjson",
+  "version": "0.1.0",
+  "description": "A cross compiler for bibtex and bibjson file formats. Convert BibTex documents to BibJson.",
+  "main": "dist/bibtex-bibjson.js",
+  "scripts": {
+    "build": "pegjs -o src/bibtex.ts src/bibtex.pegjs && webpack --config webpack.prod.js",
+    "pretest": "tsc",
+    "test": "ava tests/markademic.spec.js",
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
+    "test:watch": "ava --converage --watch",
+    "start": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaingalvan/bibtex2bibjson.git"
+  },
+  "keywords": [
+    "transpiler",
+    "compiler",
+    "bibtex",
+    "bibjson"
+  ],
+  "author": "Alain Galvan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alaingalvan/bibtex2bibjson/issues"
+  },
+  "homepage": "https://github.com/alaingalvan/bibtex2bibjson#readme",
+  "devDependencies": {
+    "@types/node": "^12.0.x",
+    "ava": "^2.1.x",
+    "clean-webpack-plugin": "^3.0.0",
+    "codecov": "^3.5.x",
+    "coveralls": "^3.0.x",
+    "nyc": "^14.1.x",
+    "pegjs": "^0.10.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.35.2",
+    "webpack-command": "^0.4.2",
+    "webpack-merge": "^4.2.1"
+  }
+}

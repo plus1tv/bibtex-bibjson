@@ -17,7 +17,7 @@ examples
 CMakeLists.txt
 .clang-format
 .flowconfig
-webpack.*.js
+webpack.ts
 .travis.yml
 .vscode
 example

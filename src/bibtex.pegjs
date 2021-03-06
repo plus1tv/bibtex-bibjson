@@ -25,9 +25,7 @@ Citation
   }
   
 CitationType
-  = 'inproceedings'
-  / 'article'
-  / 'misc'
+  = $([a-z]i+)
   
 Separator
   = '{' 
@@ -45,7 +43,7 @@ AttributeName
   = $([a-z]i+)
   
 AttributeData
-  = $([a-z:\'/,\-. 0-9]i)+
+  = $([a-z:\'/,\-\(\). 0-9]i)+
 
 UnknownAttribute
   = n:AttributeName _ '=' _ Separator _ title:AttributeData _ Separator ','? _

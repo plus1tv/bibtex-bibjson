@@ -19,18 +19,14 @@ Check out our [Demo](https://codepen.io/alaingalvan/pen/agjaLo) to try it out fo
 
 ```ts
 import {openFileSync} from 'fs';
-import {bibTexParser, bibJsonParser} from 'bibtex-bibjson';
+import {bibTexParser} from 'bibtex-bibjson';
 
 // Read file as string
 let bibTexStr = openFileSync('./citations.bib');
 
 // {} Convert to BibJson
 // function bibTexParser(bibTexStr: string): object
-let bibJson = bibTexParser(bibTexStr);
-
-// Convert back to BibTex
-// function bibJsonParser(bibJson: object): string
-// let bibTex = bibJsonParser(bibJson);
+let bibJson: Object = bibTexParser(bibTexStr);
 ```
 
 ## License
@@ -41,14 +37,14 @@ bibtex-bibjson is licensed as either **MIT** or **Apache-2.0**, whichever you wo
 [cmake-url]: https://cmake.org/
 [license-img]: https://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
-[travis-img]: https://img.shields.io/travis/alaingalvan/bibtex-bibjson.svg?style=flat-square&logo=travis
-[travis-url]: https://travis-ci.org/alaingalvan/bibtex-bibjson
+[travis-img]: https://img.shields.io/travis/plus1tv/bibtex-bibjson.svg?style=flat-square&logo=travis
+[travis-url]: https://travis-ci.org/plus1tv/bibtex-bibjson
 [npm-img]: https://img.shields.io/npm/v/bibtex-bibjson.svg?style=flat-square
 [npm-url]: http://npm.im/bibtex-bibjson
 [npm-download-img]: https://img.shields.io/npm/dm/bibtex-bibjson.svg?style=flat-square
-[david-url]: https://david-dm.org/alaingalvan/bibtex-bibjson
-[david-img]: https://david-dm.org/alaingalvan/bibtex-bibjson.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/alaingalvan/bibtex-bibjson#info=devDependencies
-[david-dev-img]: https://david-dm.org/alaingalvan/bibtex-bibjson/dev-status.svg?&style=flat-square
-[codecov-img]: https://img.shields.io/codecov/c/github/alaingalvan/bibtex-bibjson.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/alaingalvan/bibtex-bibjson
+[david-url]: https://david-dm.org/plus1tv/bibtex-bibjson
+[david-img]: https://david-dm.org/plus1tv/bibtex-bibjson.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/plus1tv/bibtex-bibjson#info=devDependencies
+[david-dev-img]: https://david-dm.org/plus1tv/bibtex-bibjson/dev-status.svg?&style=flat-square
+[codecov-img]: https://img.shields.io/codecov/c/github/plus1tv/bibtex-bibjson.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/plus1tv/bibtex-bibjson

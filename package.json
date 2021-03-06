@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "description": "A cross compiler for bibtex and bibjson file formats. Convert BibTex documents to BibJson.",
   "main": "dist/bibtex-bibjson.js",
+  "typings": "bibtex-bibjson.d.ts",
+  "types": "bibtex-bibjson.d.ts",
   "scripts": {
-    "build": "pegjs -o src/bibtex.ts src/bibtex.pegjs && ts-node webpack.ts",
-    "pretest": "tsc",
-    "test": "ava tests/markademic.spec.js",
+    "build": "pegjs -o src/bibtex.ts src/bibtex.pegjs && cross-env NODE_ENV=production ts-node webpack.ts",
+    "test": "ava tests/test.ts",
     "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
     "test:watch": "ava --converage --watch",
     "start": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alaingalvan/bibtex2bibjson.git"
+    "url": "git+https://github.com/plus1tv/bibtex-bibjson.git"
   },
   "keywords": [
     "transpiler",
@@ -24,15 +25,24 @@
   "author": "Alain Galvan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alaingalvan/bibtex2bibjson/issues"
+    "url": "https://github.com/plus1tv/bibtex-bibjson/issues"
   },
-  "homepage": "https://github.com/alaingalvan/bibtex2bibjson#readme",
+  "homepage": "https://github.com/plus1tv/bibtex-bibjson#readme",
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register/transpile-only"
+    ]
+  },
   "devDependencies": {
     "@types/node": "^14.14.x",
     "ava": "^3.15.x",
     "clean-webpack-plugin": "^3.0.0",
     "codecov": "^3.8.x",
     "coveralls": "^3.1.x",
+    "cross-env": "^7.0.3",
     "nyc": "^15.1.x",
     "pegjs": "^0.10.0",
     "ts-loader": "^8.0.17",

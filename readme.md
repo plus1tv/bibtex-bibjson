@@ -11,7 +11,7 @@
 npm i bibtex-bibjson -S
 ```
 
-A tool to convert BibTex documents to BibJson.
+A tool to convert BibTex documents to [BibJSON](http://okfnlabs.org/bibjson/).
 
 ## Usage & Demo
 
@@ -27,6 +27,36 @@ let bibTexStr = openFileSync('./citations.bib');
 // {} Convert to BibJson
 // function bibTexParser(bibTexStr: string): object
 let bibJson: Object = bibTexParser(bibTexStr);
+```
+
+### Example
+
+```bib
+@article{hasselgren2020,
+    author = {Hasselgren, Jon and Munkberg, J. and Salvi, Marco and Patney, A. and Lefohn, Aaron},
+    year = {2020},
+    title = {Neural Temporal Adaptive Sampling and Denoising},
+    journal = {Computer Graphics Forum}
+}
+```
+
+Becomes:
+
+```json
+{
+    "hasselgren2020": {
+        "author": [
+            { "name": "Jon Hasselgren" },
+            { "name": "J. Munkberg" },
+            { "name": "Marco Salvi" },
+            { "name": "A. Patney" },
+            { "name": "Aaron Lefohn" }
+        ],
+        "year": 2020,
+        "title": "Neural Temporal Adaptive Sampling and Denoising",
+        "journal": "Computer Graphics Forum",
+    }
+}
 ```
 
 ## License

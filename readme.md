@@ -67,8 +67,8 @@ bibtex-bibjson is licensed as either **MIT** or **Apache-2.0**, whichever you wo
 [cmake-url]: https://cmake.org/
 [license-img]: https://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
-[travis-img]: https://img.shields.io/travis/plus1tv/bibtex-bibjson.svg?style=flat-square&logo=travis
-[travis-url]: https://travis-ci.org/plus1tv/bibtex-bibjson
+[travis-img]: https://img.shields.io/travis/com/plus1tv/bibtex-bibjson?style=flat-square
+[travis-url]: https://www.travis-ci.com/github/plus1tv/bibtex-bibjson
 [npm-img]: https://img.shields.io/npm/v/bibtex-bibjson.svg?style=flat-square
 [npm-url]: http://npm.im/bibtex-bibjson
 [npm-download-img]: https://img.shields.io/npm/dm/bibtex-bibjson.svg?style=flat-square

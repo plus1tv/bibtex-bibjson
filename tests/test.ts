@@ -10,7 +10,7 @@ test('Test Example', (t) => {
   
     var compiled = bibTexParser(input);
   
-    writeFileSync('tests/out.json', JSON.stringify(compiled));
+    //writeFileSync('tests/out.json', JSON.stringify(compiled));
   
     var outFile = JSON.parse(readFileSync(join(__dirname, 'out.json')).toString());
   

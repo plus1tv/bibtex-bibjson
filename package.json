@@ -2,15 +2,17 @@
   "name": "bibtex-bibjson",
   "version": "0.1.1",
   "description": "📚 A tool to convert BibTeX documents to BibJSON.",
+  "typings": "dist/bibtex-bibjson.d.ts",
+  "types": "dist/bibtex-bibjson.d.ts",
+  "source": "src/bibtex-bibjson.ts",
   "main": "dist/bibtex-bibjson.js",
-  "browser": "dist/bibtex-bibjson.browser.js",
-  "typings": "bibtex-bibjson.d.ts",
-  "types": "bibtex-bibjson.d.ts",
+  "module": "dist/bibtex-bibjson.module.js",
+  "unpkg": "dist/bibtex-bibjson.umd.js",
+  "exports": "./dist/bibtex-bibjson.modern.js",
   "scripts": {
-    "build": "pegjs -o src/bibtex.ts src/bibtex.pegjs && cross-env NODE_ENV=production ts-node webpack.ts",
+    "build": "pegjs -o src/bibtex.js src/bibtex.pegjs && cross-env NODE_ENV=production microbundle --compress",
     "test": "ava tests/test.ts",
     "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
-    "test:watch": "ava --converage --watch",
     "start": "npm run build"
   },
   "repository": {
@@ -43,11 +45,11 @@
     "codecov": "^3.8.x",
     "coveralls": "^3.1.x",
     "cross-env": "^7.0.3",
+    "microbundle": "^0.13.0",
     "nyc": "^15.1.x",
     "pegjs": "^0.10.0",
     "ts-loader": "^8.0.17",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.3",
-    "webpack": "^5.24.3"
+    "typescript": "^4.2.3"
   }
 }

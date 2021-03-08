@@ -1,1 +1,0 @@
-export function bibTexParser(bibTex:string): Object;

@@ -20,6 +20,7 @@ wasm-build
 *.tgz
 dist
 *.map
+*.js
 
 ## Visual Studio
 # User-specific files

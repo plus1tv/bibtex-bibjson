@@ -11,7 +11,7 @@
 npm i bibtex-bibjson -S
 ```
 
-A tool to convert BibTex documents to [BibJSON](http://okfnlabs.org/bibjson/).
+A tool to convert BibTeX citations to [BibJSON](http://okfnlabs.org/bibjson/).
 
 ## Usage & Demo
 

@@ -19,14 +19,14 @@ Check out our [Demo](https://codepen.io/alaingalvan/pen/agjaLo) to try it out fo
 
 ```ts
 import {openFileSync} from 'fs';
-import {bibTexParser} from 'bibtex-bibjson';
+import {parse} from 'bibtex-bibjson';
 
 // Read file as string
 let bibTexStr = openFileSync('./citations.bib');
 
 // {} Convert to BibJson
-// function bibTexParser(bibTexStr: string): object
-let bibJson: Object = bibTexParser(bibTexStr);
+// function parse(bibTexStr: string): object
+let bibJson: Object = parse(bibTexStr);
 ```
 
 ### Example

@@ -4,13 +4,13 @@
   "description": "📚 A tool to convert BibTeX documents to BibJSON.",
   "typings": "dist/bibtex-bibjson.d.ts",
   "types": "dist/bibtex-bibjson.d.ts",
-  "source": "src/bibtex-bibjson.ts",
+  "source": "src/bibtex-bibjson.js",
   "main": "dist/bibtex-bibjson.js",
   "module": "dist/bibtex-bibjson.module.js",
   "unpkg": "dist/bibtex-bibjson.umd.js",
   "exports": "./dist/bibtex-bibjson.modern.js",
   "scripts": {
-    "build": "pegjs -o src/bibtex.js src/bibtex.pegjs && cross-env NODE_ENV=production microbundle --compress",
+    "build": "pegjs -o src/bibtex-bibjson.js src/bibtex.pegjs && cross-env NODE_ENV=production microbundle --compress",
     "test": "ava tests/test.ts",
     "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
     "start": "npm run build"

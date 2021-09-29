@@ -32,7 +32,7 @@ Separator
   / '}'
   
 CitationName
-  = n:$([a-z:\.0-9]i)+
+  = n:$([a-z:\.\/0-9]i)+
   
 // Inner body of citation
 
@@ -43,7 +43,7 @@ AttributeName
   = $([a-z]i+)
   
 AttributeData
-  = $([a-z:\'/,\-\(\). 0-9]i)+
+  = $([a-z:\'/,\-\(\). 0-9\n\t\r\/]i)+
 
 UnknownAttribute
   = n:AttributeName _ '=' _ Separator _ title:AttributeData _ Separator ','? _

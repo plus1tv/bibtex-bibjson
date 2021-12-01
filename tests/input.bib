@@ -10,6 +10,26 @@ abstract = {Light transport algorithms generate realistic images by simulating t
 note = {AAI9837162}
 }
 
+@article{10.1145/3450626.3459812,
+author = {M\"{u}ller, Thomas and Rousselle, Fabrice and Nov\'{a}k, Jan and Keller, Alexander},
+title = {Real-Time Neural Radiance Caching for Path Tracing},
+year = {2021},
+issue_date = {August 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {40},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3450626.3459812},
+doi = {10.1145/3450626.3459812},
+abstract = {We present a real-time neural radiance caching method for path-traced global illumination. Our system is designed to handle fully dynamic scenes, and makes no assumptions about the lighting, geometry, and materials. The data-driven nature of our approach sidesteps many difficulties of caching algorithms, such as locating, interpolating, and updating cache points. Since pretraining neural networks to handle novel, dynamic scenes is a formidable generalization challenge, we do away with pretraining and instead achieve generalization via adaptation, i.e. we opt for training the radiance cache while rendering. We employ self-training to provide low-noise training targets and simulate infinite-bounce transport by merely iterating few-bounce training updates. The updates and cache queries incur a mild overhead---about 2.6ms on full HD resolution---thanks to a streaming implementation of the neural network that fully exploits modern hardware. We demonstrate significant noise reduction at the cost of little induced bias, and report state-of-the-art, real-time performance on a number of challenging scenarios.},
+journal = {ACM Trans. Graph.},
+month = {jul},
+articleno = {36},
+numpages = {16},
+keywords = {rendering, deep learning, neural networks, radiance caching, path tracing, real-time}
+}
+
 @inproceedings{10.1145/1661412.1618512,
 author = {Yuksel, Cem and Schaefer, Scott and Keyser, John},
 title = {Hair Meshes},

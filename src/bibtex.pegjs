@@ -6,7 +6,6 @@ Citations
     var outputObj = {};
     for (let citation of c)
     {
-      console.log(citation);
       var label = citation[1][0];
       var data = citation[1][1];
       Object.assign(outputObj, {[label]: data});

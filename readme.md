@@ -2,7 +2,6 @@
 
 [![Npm Package][npm-img]][npm-url]
 [![License][license-img]][license-url]
-[![Travis Tests][travis-img]][travis-url]
 
 ## Installation
 
@@ -62,14 +61,7 @@ Becomes:
 
 bibtex-bibjson is licensed as either **MIT** or **Apache-2.0**, whichever you would prefer.
 
-[cmake-img]: https://img.shields.io/badge/cmake-3.6-1f9948.svg?style=flat-square
-[cmake-url]: https://cmake.org/
-[license-img]: https://img.shields.io/:license-mit-blue.svg?style=flat-square
-[license-url]: https://opensource.org/licenses/MIT
-[travis-img]: https://img.shields.io/travis/com/plus1tv/bibtex-bibjson?style=flat-square
-[travis-url]: https://www.travis-ci.com/github/plus1tv/bibtex-bibjson
 [npm-img]: https://img.shields.io/npm/v/bibtex-bibjson.svg?style=flat-square
 [npm-url]: http://npm.im/bibtex-bibjson
-[npm-download-img]: https://img.shields.io/npm/dm/bibtex-bibjson.svg?style=flat-square
-[codecov-img]: https://img.shields.io/codecov/c/github/plus1tv/bibtex-bibjson.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/plus1tv/bibtex-bibjson
+[license-img]: https://img.shields.io/:license-mit-blue.svg?style=flat-square
+[license-url]: https://opensource.org/licenses/MIT

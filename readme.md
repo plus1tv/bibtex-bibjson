@@ -17,8 +17,8 @@ A tool to convert BibTeX citations to [BibJSON](http://okfnlabs.org/bibjson/).
 Check out our [Demo](https://codepen.io/alaingalvan/pen/agjaLo) to try it out for yourself!
 
 ```ts
-import {openFileSync} from 'fs';
-import {parse} from 'bibtex-bibjson';
+import { openFileSync } from 'fs';
+import { parse } from 'bibtex-bibjson';
 
 // Read file as string
 let bibTexStr = openFileSync('./citations.bib');
@@ -53,7 +53,7 @@ Becomes:
         ],
         "year": 2020,
         "title": "Neural Temporal Adaptive Sampling and Denoising",
-        "journal": "Computer Graphics Forum",
+        "journal": "Computer Graphics Forum"
     }
 }
 ```

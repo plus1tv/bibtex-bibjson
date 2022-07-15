@@ -1,10 +1,6 @@
 {
     "eric1998": {
-        "author": [
-            {
-                "name": "Eric Veach"
-            }
-        ],
+        "author": [{ "name": "Eric Veach" }],
         "advisor": "Guibas, Leonidas J.",
         "title": "Robust Monte Carlo Methods for Light Transport Simulation",
         "year": 1998,
@@ -16,18 +12,10 @@
     },
     "10.1145/3450626.3459812": {
         "author": [
-            {
-                "name": "Thomas M\\\"{u}ller"
-            },
-            {
-                "name": "Fabrice Rousselle"
-            },
-            {
-                "name": "Jan Nov\\'{a}k"
-            },
-            {
-                "name": "Alexander Keller"
-            }
+            { "name": "Thomas M\\\"{u}ller" },
+            { "name": "Fabrice Rousselle" },
+            { "name": "Jan Nov\\'{a}k" },
+            { "name": "Alexander Keller" }
         ],
         "title": "Real-Time Neural Radiance Caching for Path Tracing",
         "year": 2021,
@@ -37,11 +25,7 @@
         "volume": "40",
         "number": "4",
         "issn": "0730-0301",
-        "link": [
-            {
-                "url": "https://doi.org/10.1145/3450626.3459812"
-            }
-        ],
+        "link": [{ "url": "https://doi.org/10.1145/3450626.3459812" }],
         "doi": "10.1145/3450626.3459812",
         "abstract": "We present a real-time neural radiance caching method for path-traced global illumination. Our system is designed to handle fully dynamic scenes, and makes no assumptions about the lighting, geometry, and materials. The data-driven nature of our approach sidesteps many difficulties of caching algorithms, such as locating, interpolating, and updating cache points. Since pretraining neural networks to handle novel, dynamic scenes is a formidable generalization challenge, we do away with pretraining and instead achieve generalization via adaptation, i.e. we opt for training the radiance cache while rendering. We employ self-training to provide low-noise training targets and simulate infinite-bounce transport by merely iterating few-bounce training updates. The updates and cache queries incur a mild overhead---about 2.6ms on full HD resolution---thanks to a streaming implementation of the neural network that fully exploits modern hardware. We demonstrate significant noise reduction at the cost of little induced bias, and report state-of-the-art, real-time performance on a number of challenging scenarios.",
         "journal": "ACM Trans. Graph.",
@@ -52,26 +36,16 @@
     },
     "10.1145/1661412.1618512": {
         "author": [
-            {
-                "name": "Cem Yuksel"
-            },
-            {
-                "name": "Scott Schaefer"
-            },
-            {
-                "name": "John Keyser"
-            }
+            { "name": "Cem Yuksel" },
+            { "name": "Scott Schaefer" },
+            { "name": "John Keyser" }
         ],
         "title": "Hair Meshes",
         "year": 2009,
         "isbn": "9781605588582",
         "publisher": "Association for Computing Machinery",
         "address": "New York, NY, USA",
-        "link": [
-            {
-                "url": "https://doi.org/10.1145/1661412.1618512"
-            }
-        ],
+        "link": [{ "url": "https://doi.org/10.1145/1661412.1618512" }],
         "doi": "10.1145/1661412.1618512",
         "abstract": "Despite the visual importance of hair and the attention paid to hair modeling in the\r\ngraphics research, modeling realistic hair still remains a very challenging task that\r\ncan be performed by very few artists. In this paper we present hair meshes, a new\r\nmethod for modeling hair that aims to bring hair modeling as close as possible to\r\nmodeling polygonal surfaces. This new approach provides artists with direct control\r\nof the overall shape of the hair, giving them the ability to model the exact hair\r\nshape they desire. We use the hair mesh structure for modeling the hair volume with\r\ntopological constraints that allow us to automatically and uniquely trace the path\r\nof individual hair strands through this volume. We also define a set of topological\r\noperations for creating hair meshes that maintain these constraints. Furthermore,\r\nwe provide a method for hiding the volumetric structure of the hair mesh from the\r\nend user, thus allowing artists to concentrate on manipulating the outer surface of\r\nthe hair as a polygonal surface. We explain and show examples of how hair meshes can\r\nbe used to generate individual hair strands for a wide variety of realistic hair styles.",
         "booktitle": "ACM SIGGRAPH Asia 2009 Papers",
@@ -83,21 +57,11 @@
     },
     "hasselgren2020": {
         "author": [
-            {
-                "name": "Jon Hasselgren"
-            },
-            {
-                "name": "J. Munkberg"
-            },
-            {
-                "name": "Marco Salvi"
-            },
-            {
-                "name": "A. Patney"
-            },
-            {
-                "name": "Aaron Lefohn"
-            }
+            { "name": "Jon Hasselgren" },
+            { "name": "J. Munkberg" },
+            { "name": "Marco Salvi" },
+            { "name": "A. Patney" },
+            { "name": "Aaron Lefohn" }
         ],
         "year": 2020,
         "month": "05",

@@ -1,21 +1,21 @@
 sudo: false
 language: node_js
 cache:
-  directories:
-    - node_modules
+    directories:
+        - node_modules
 notifications:
-  email: false
+    email: false
 node_js:
-  - '14'
+    - '14'
 before_install:
-  - npm i
+    - npm i
 before_script:
-  - npm prune
+    - npm prune
 script:
-  - npm run build
-  - npm run test
+    - npm run build
+    - npm run test
 after_success:
-- npm run coverage
+    - npm run coverage
 branches:
-  except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"
+    except:
+        - "/^v\\d+\\.\\d+\\.\\d+$/"

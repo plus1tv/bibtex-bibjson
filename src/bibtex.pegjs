@@ -42,15 +42,15 @@ Title
   { return ['title', title.trim()]; }
 
 Publisher
-  = 'publisher'i _ '=' _ '{' _ pub:$(_ UnicodeInnerData _)+ '}' ','? _
-  { return ['publisher', pub.trim()]; }
+  = 'publisher'i _ '=' _ '{' _ pub:$(_ UnicodeInnerData _)+ _ abbrv:$(_'{' UnicodeInnerData _ '}' _) _ '}' ','? _
+  { return ['publisher',`${(pub ?? "").trim()} ${(abbrv ?? "").trim() }`]; }
 
 Url
   = 'url'i _ '=' _ '{' _ link:$(_ [a-z:\.\/ 0-9]i _)+  '}' ','? _
   { return ['link', [{url: link.trim()}]]; }
 
 Year
-  = 'year'i _ '=' _ '{' _ year:$(_ [0-9]i _)+ '}' ','? _
+  = 'year'i _ '=' _ '{'? _ year:$(_ [0-9]i _)+ '}'? ','? _
   { return ['year', parseInt(year.trim())]; }
 
 Authors
@@ -165,6 +165,7 @@ UnicodeLetterNumber
   / Lo
   / Nl
   / Nd
+  / Pc
 
 UnicodeChar
   = UnicodeLetterNumber
